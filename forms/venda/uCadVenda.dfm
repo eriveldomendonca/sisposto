@@ -1,6 +1,7 @@
 inherited frmCadVenda: TfrmCadVenda
   ClientWidth = 897
   ExplicitWidth = 903
+  ExplicitHeight = 471
   PixelsPerInch = 96
   TextHeight = 16
   inherited pnlTitulo: TPanel
@@ -124,7 +125,10 @@ inherited frmCadVenda: TfrmCadVenda
       end
     end
     inherited tabManutencao: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 27
       ExplicitWidth = 889
+      ExplicitHeight = 311
       object Label1: TLabel
         Left = 40
         Top = 25
@@ -274,6 +278,7 @@ inherited frmCadVenda: TfrmCadVenda
         EditLabel.Font.Style = [fsBold]
         EditLabel.ParentFont = False
         TabOrder = 2
+        OnExit = fld_qtdlitroExit
         OnKeyPress = fld_qtdlitroKeyPress
       end
     end

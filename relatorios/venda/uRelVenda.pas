@@ -17,30 +17,40 @@ type
     RLDBText1: TRLDBText;
     RLLabel3: TRLLabel;
     RLLabel4: TRLLabel;
-    RLDBText2: TRLDBText;
-    RLBand5: TRLBand;
     RLLabel5: TRLLabel;
-    RLDBText3: TRLDBText;
     RLLabel6: TRLLabel;
-    RLDBText4: TRLDBText;
     RLLabel7: TRLLabel;
-    RLDBText6: TRLDBText;
     RLLabel8: TRLLabel;
-    RLDBText7: TRLDBText;
     RLLabel9: TRLLabel;
-    RLDBText8: TRLDBText;
     RLLabel11: TRLLabel;
-    RLDBText10: TRLDBText;
-    RLDBResult2: TRLDBResult;
-    RLDBResult3: TRLDBResult;
-    RLDBResult4: TRLDBResult;
-    RLDBResult5: TRLDBResult;
     edtDataInicial: TMaskEdit;
     Label2: TLabel;
     edtDataFinal: TMaskEdit;
     Label3: TLabel;
+    RLBand7: TRLBand;
     RLLabel12: TRLLabel;
+    RLDBText9: TRLDBText;
+    RLDBText2: TRLDBText;
+    RLDBText3: TRLDBText;
+    RLDBText4: TRLDBText;
+    RLDBText6: TRLDBText;
+    RLDBText7: TRLDBText;
+    RLDBText8: TRLDBText;
+    RLDBText10: TRLDBText;
     RLDBResult1: TRLDBResult;
+    RLDBResult2: TRLDBResult;
+    RLDBResult3: TRLDBResult;
+    RLDBResult4: TRLDBResult;
+    RLDBResult5: TRLDBResult;
+    RLLabel13: TRLLabel;
+    RLDraw2: TRLDraw;
+    RLDraw4: TRLDraw;
+    RLDBResult7: TRLDBResult;
+    RLDBResult11: TRLDBResult;
+    RLDBResult12: TRLDBResult;
+    RLDBResult13: TRLDBResult;
+    RLDBResult14: TRLDBResult;
+    RLLabel15: TRLLabel;
     procedure edtDataInicialExit(Sender: TObject);
     procedure btnImprimirClick(Sender: TObject);
     procedure btnVisualizarClick(Sender: TObject);
@@ -65,7 +75,7 @@ begin
     datafinal := StrtoDate(edtDatafinal.EditText);
     filtro := ' WHERE DATAVENDA >= :datainicial '+
               'AND DATAVENDA <= :datafinal '+
-              'ORDER BY BOMBA.DESCRICAO, DATAVENDA, VENDA.ID';
+              'ORDER BY DATAVENDA, BOMBA.DESCRICAO, VENDA.ID';
   except
     MessageERROR('Período inválido');
     abort;
@@ -89,7 +99,7 @@ begin
     datafinal := StrtoDate(edtDatafinal.EditText);
     filtro := ' WHERE DATAVENDA >= :datainicial '+
               'AND DATAVENDA <= :datafinal '+
-              'ORDER BY BOMBA.DESCRICAO, DATAVENDA, VENDA.ID';
+              'ORDER BY DATAVENDA, BOMBA.DESCRICAO, VENDA.ID';
   except
     MessageERROR('Período inválido');
     abort;

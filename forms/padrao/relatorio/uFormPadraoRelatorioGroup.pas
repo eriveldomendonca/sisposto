@@ -23,14 +23,11 @@ type
     rlRelatorio: TRLReport;
     RLBand1: TRLBand;
     RLBand2: TRLBand;
-    RLBand3: TRLBand;
-    RLBand4: TRLBand;
     RLSystemInfo1: TRLSystemInfo;
     RLSystemInfo2: TRLSystemInfo;
     RLLabel1: TRLLabel;
     RLSystemInfo3: TRLSystemInfo;
     RLDraw1: TRLDraw;
-    RLDraw2: TRLDraw;
     RLDraw3: TRLDraw;
     Label1: TLabel;
     qryListagem: TFDQuery;
@@ -41,6 +38,11 @@ type
     RLDBText5: TRLDBText;
     RLGroup1: TRLGroup;
     RLLabel10: TRLLabel;
+    RLGroup2: TRLGroup;
+    RLBand3: TRLBand;
+    RLBand4: TRLBand;
+    RLBand5: TRLBand;
+    RLBand6: TRLBand;
     procedure btnFecharClick(Sender: TObject);
     procedure btnImprimirClick(Sender: TObject);
     procedure btnVisualizarClick(Sender: TObject);

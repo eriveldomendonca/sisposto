@@ -25,10 +25,8 @@ object frmPadraoRelatorioGroup: TfrmPadraoRelatorioGroup
     ActivePage = tsRelatorio
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 574
     object tsRelatorio: TTabSheet
       Caption = 'Configura'#231#227'o'
-      ExplicitWidth = 566
     end
   end
   object Panel1: TPanel
@@ -39,7 +37,6 @@ object frmPadraoRelatorioGroup: TfrmPadraoRelatorioGroup
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitWidth = 574
     object Label1: TLabel
       Left = 32
       Top = 22
@@ -62,7 +59,6 @@ object frmPadraoRelatorioGroup: TfrmPadraoRelatorioGroup
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitWidth = 574
     object btnImprimir: TBitBtn
       Left = 40
       Top = 23
@@ -138,8 +134,8 @@ object frmPadraoRelatorioGroup: TfrmPadraoRelatorioGroup
     end
   end
   object rlRelatorio: TRLReport
-    Left = 16
-    Top = 400
+    Left = 32
+    Top = 112
     Width = 794
     Height = 1123
     Margins.LeftMargin = 5.000000000000000000
@@ -190,7 +186,7 @@ object frmPadraoRelatorioGroup: TfrmPadraoRelatorioGroup
     end
     object RLBand2: TRLBand
       Left = 19
-      Top = 158
+      Top = 201
       Width = 756
       Height = 16
       BandType = btFooter
@@ -282,26 +278,38 @@ object frmPadraoRelatorioGroup: TfrmPadraoRelatorioGroup
       Left = 19
       Top = 85
       Width = 756
-      Height = 73
-      object RLBand3: TRLBand
+      Height = 116
+      object RLGroup2: TRLGroup
         Left = 0
         Top = 0
         Width = 756
-        Height = 30
-        BandType = btColumnHeader
-        object RLDraw2: TRLDraw
-          Left = 3
-          Top = 22
-          Width = 742
-          Height = 13
-          DrawKind = dkLine
+        Height = 76
+        object RLBand3: TRLBand
+          Left = 0
+          Top = 0
+          Width = 756
+          Height = 16
+          BandType = btColumnHeader
+        end
+        object RLBand4: TRLBand
+          Left = 0
+          Top = 16
+          Width = 756
+          Height = 16
+        end
+        object RLBand6: TRLBand
+          Left = 0
+          Top = 32
+          Width = 756
+          Height = 16
         end
       end
-      object RLBand4: TRLBand
+      object RLBand5: TRLBand
         Left = 0
-        Top = 30
+        Top = 76
         Width = 756
-        Height = 16
+        Height = 25
+        BandType = btSummary
       end
     end
   end
